@@ -14,5 +14,5 @@ req<-GET("https://api.github.com/users/gallagh5/repos",gtoken)
 stop_for_status(req)
 json1=content(req)
 gitDF=jsonlite::fromJSON(jsonlite::toJSON(json1))
-gitDF=[gitDF$full_name=="jtleek/datahsraing","created_at"]
+gitDF=[gitDF$full_name=="gallagh5/datahsharing","created_at"]
 
